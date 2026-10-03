@@ -132,3 +132,7 @@ dmypy.json
 
 .env
 *.sqlite3
+
+.env.*
+!.env.example
+/backend/static_backend/
