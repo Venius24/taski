@@ -28,7 +28,7 @@ const TaskEditModal = ({ taskData, toggle, onSave }) => {
 
   return (
     <Modal isOpen={true} toggle={toggle}>
-      <Form onSubmit={(e) => { onSave(item); e.preventDefault(); }}>
+      <Form onSubmit={(e) => { e.preventDefault(); onSave(item); }}>
         <ModalHeader toggle={toggle}>Task Item</ModalHeader>
         <ModalBody>
           <FormGroup>

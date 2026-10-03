@@ -1,18 +1,18 @@
 const TabList = ({ isShowCompleted, displayCompleted }) => {
   return (
     <div className="nav nav-tabs">
-      <span
+      <button type="button"
         onClick={() => displayCompleted(true)}
         className={isShowCompleted ? "nav-link active" : "nav-link"}
       >
         Complete
-      </span>
-      <span
+      </button>
+      <button type="button"
         onClick={() => displayCompleted(false)}
         className={isShowCompleted ? "nav-link" : "nav-link active"}
       >
         Incomplete
-      </span>
+      </button>
     </div>
   );
 };
